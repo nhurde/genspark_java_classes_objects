@@ -29,12 +29,12 @@ public class Holiday
         return name;
     }
 
-    //Extra methods for getters [ end ]
 
     public boolean inSameHoliday( Holiday otherHoliday )
     {
         return inSameHoliday( this, otherHoliday );
     }
+    
     public boolean inSameHoliday( Holiday holiday1, Holiday holiday2 )
     {
         if( holiday1.name.equals( holiday2.name)  == false )
@@ -53,6 +53,8 @@ public class Holiday
         }
         return true;
     }
+
+    //Extra methods for getters [ end ]
 
     //Part1_PartB
     public boolean inSameMonth( Holiday otherHoliday)
